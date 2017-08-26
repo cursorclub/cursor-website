@@ -1,0 +1,31 @@
+{
+  "name": "cursor-website",
+  "version": "1.0.0",
+  "description": "Cursor's website",
+  "author": "Nicholas Carr <nicholas.carr@rogers.com>",
+  "private": true,
+  "dependencies": {
+    "@nuxtjs/pwa": "latest",
+    "nuxt": "latest",
+    "vuetify": "^0.14.11"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.15.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-html": "^2.0.0",
+    "eslint-plugin-promise": "^3.4.1",
+    "eslint-plugin-standard": "^2.0.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1"
+  }
+}
