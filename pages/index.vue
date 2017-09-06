@@ -15,20 +15,20 @@
             </v-layout>
           </v-container>
         </section>
-        <section v-if="nextEvent" class="mb-3">
+        <section v-if="data" class="mb-3">
           <v-container>
             <v-card class="elevation-2">
               <v-card-text class="py-5">
                 <v-layout row wrap>
                   <v-flex xs12 md4 class="my-3">
-                    <img v-if="nextEvent.image" :src="nextEvent.image.src" class="elevation-1" />
+                    <img v-if="data.image" :src="data.image.src" class="elevation-1" />
                   </v-flex>
                   <v-flex xs12 md8 class="text-xs-center my-3">
-                    <h2 class="mt-4 mb-3">{{ nextEvent.name }}</h2>
-                    <p>{{ nextEvent.startTime }} - {{ nextEvent.endTime }}</p>
-                    <p>{{ nextEvent.location }}</p>
-                    <p>{{ nextEvent.description }}</p>
-                    <v-btn :class="nextEvent.accent" :to="{ name: 'event', params: nextEvent.permalink }"></v-btn>
+                    <h2 class="mt-4 mb-3">{{ data.name }}</h2>
+                    <p>{{ data.startTime }} - {{ data.endTime }}</p>
+                    <p>{{ data.location }}</p>
+                    <p>{{ data.description }}</p>
+                    <v-btn :class="data.accent" :to="{ name: 'event', params: data.permalink }"></v-btn>
                     <router-link :to="{ name: '', params: {} }"></router-link>
                   </v-flex>
                 </v-layout>
@@ -46,11 +46,11 @@
 </template>
 
 <script>
+  import populate from '~plugins/api'
   export default {
-    data () {
-      return {
-        nextEvent: null
-      }
-    }
+    data: () => ({
+      data: null
+    }),
+    mounted: populate('events/next')
   }
 </script>
