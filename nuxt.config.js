@@ -58,6 +58,6 @@ module.exports = {
     }
   },
   router: {
-    base: 'cursor-website'
+    base: '/cursor-website'
   }
 }
