@@ -1,7 +1,7 @@
 {
   "name": "cursor-website",
   "version": "1.0.0",
-  "description": "Website for Cursor",
+  "description": "An inclusive community dedicated to helping passionate youth build tech through mentoring and experience. We strive to create a rich tech culture in the GTA",
   "author": "Cursor <hello@cursor.club>",
   "scripts": {
     "dev": "nuxt",
@@ -10,12 +10,13 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/font-awesome": "^1.0.2",
+    "@nuxtjs/icon": "^1.1.2",
+    "@nuxtjs/manifest": "^1.7.2",
+    "@nuxtjs/meta": "^1.5.3",
     "autoprefixer": "^7.1.5",
     "bootstrap": "^4.0.0-beta",
-    "font-awesome": "^4.7.0",
-    "font-awesome-webpack": "0.0.5-beta.2",
     "jquery": "^3.2.1",
-    "less": "^2.7.2",
     "node-sass": "^4.5.3",
     "nuxt": "^1.0.0-rc6",
     "popper.js": "^1.12.5",
