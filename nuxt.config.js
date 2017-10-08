@@ -30,7 +30,6 @@ module.exports = {
   */
   build: {
     vendor: ['jquery', 'popper.js', 'bootstrap', 'font-awesome-webpack'],
-    publicPath: '_nuxt/',
     postCSS: [
       require('precss'),
       require('autoprefixer')
@@ -57,5 +56,8 @@ module.exports = {
         })
       }
     }
+  },
+  router: {
+    base: '.'
   }
 }
