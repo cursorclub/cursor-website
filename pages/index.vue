@@ -3,7 +3,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="~/static/wordmark.svg" /></a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="~/static/wordmark.svg" alt="Cursor" /></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -31,7 +31,7 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-heading"><img src="~/static/wordmark.svg" /></div>
+          <div class="intro-heading"><img src="~/static/wordmark.svg" alt="Cursor" /></div>
           <div class="intro-lead-in"><em>click</em> into tech</div>
           <a class="btn btn-xl js-scroll-trigger" href="#events">See what's next</a>
         </div>
