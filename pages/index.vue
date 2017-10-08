@@ -3,7 +3,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Cursor</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="~/static/wordmark.svg" /></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#events">Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
@@ -22,9 +22,6 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Team</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
           </ul>
         </div>
       </div>
@@ -34,15 +31,15 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">Welcome To Our Studio!</div>
-          <div class="intro-heading">It's Nice To Meet You</div>
-          <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
+          <div class="intro-heading"><img src="~/static/wordmark.svg" /></div>
+          <div class="intro-lead-in"><em>click</em> into tech</div>
+          <a class="btn btn-xl js-scroll-trigger" href="#events">See what's next</a>
         </div>
       </div>
     </header>
 
-    <!-- Services -->
-    <section id="services">
+    <!-- Events -->
+    <section id="events">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -359,29 +356,19 @@
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://twitter.com/cursorclub">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://facebook.com/cursor.club">
                   <i class="fa fa-facebook"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
+                <a href="https://instagram.com/cursor.club">
+                  <i class="fa fa-instagram"></i>
                 </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
               </li>
             </ul>
           </div>

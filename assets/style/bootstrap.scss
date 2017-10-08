@@ -1,1 +1,17 @@
 @import "~bootstrap/scss/bootstrap";
+
+.navbar-brand img {
+  height: 40px;
+}
+
+header.masthead {
+  background-image: url("~/static/banner.png");
+}
+
+header.masthead .intro-text .intro-heading {
+  margin-bottom: 0;
+}
+
+header.masthead .intro-text .intro-heading img {
+  max-width: 500px;
+}
