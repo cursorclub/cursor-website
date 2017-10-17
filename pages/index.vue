@@ -47,7 +47,7 @@
         <div class="row">
           <div class="col-lg-12">
             <p class="text-muted text-center">
-              We're an enthusiastic group of high school students who host workshops, hackathons and other in-person events to grow the GTA's high school tech community.
+              We are an organisation dedicated to helping passionate youth to learn about tech and programming through mentoring and by experience. We strive to create a rich high school tech culture in and throughout the GTA by hosting hackathons, workshops, tech talks, and other in-person events.
             </p>
           </div>
         </div>
@@ -88,7 +88,7 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="cursor-website/img/team/1.jpg" alt="">
+              <img class="mx-auto rounded-circle" src="~/static/humans/nicholas.jpg" alt="">
               <h4>Nicholas Carr</h4>
               <p class="text-muted">Co-Founder</p>
               <ul class="list-inline social-buttons">
@@ -286,7 +286,7 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="cursor-website/img/team/1.jpg" alt="">
+              <img class="mx-auto rounded-circle" src="~/static/humans/aaron.jpg" alt="">
               <h4>Aaron Yee</h4>
               <p class="text-muted">Marketing</p>
               <ul class="list-inline social-buttons">
@@ -334,7 +334,7 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="cursor-website/img/team/2.jpg" alt="">
+              <img class="mx-auto rounded-circle" src="~/static/humans/jonathan.jpg" alt="">
               <h4>Jonathan Xu</h4>
               <p class="text-muted">Logistics</p>
               <ul class="list-inline social-buttons">
