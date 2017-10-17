@@ -9,7 +9,7 @@ deploy:
   local_dir: dist
   on:
     branch: master
-  repo: cursorclub.github.io
+  repo: cursorclub/cursorclub.github.io
   target_branch: master
 cache:
   directories:
