@@ -185,7 +185,7 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="cursor-website/img/team/2.jpg" alt="">
+              <img class="mx-auto rounded-circle" src="~/static/humans/bill.jpg" alt="">
               <h4>Bill Liu</h4>
               <p class="text-muted">Head of Finance</p>
               <ul class="list-inline social-buttons">
