@@ -111,7 +111,7 @@
           </div>
           <div class="col-sm-6">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="cursor-website/img/team/2.jpg" alt="">
+              <img class="mx-auto rounded-circle" src="https://avatars2.githubusercontent.com/u/13226962" alt="">
               <h4>Misha Larionov</h4>
               <p class="text-muted">Co-Founder</p>
               <ul class="list-inline social-buttons">
