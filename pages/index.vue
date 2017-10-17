@@ -383,6 +383,11 @@
                   <i class="fa fa-instagram"></i>
                 </a>
               </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/company/18284485">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
