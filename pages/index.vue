@@ -314,7 +314,7 @@
               <p class="text-muted">Logistics</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://twitter.com/ArjunPillai9">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
