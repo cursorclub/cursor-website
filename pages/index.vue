@@ -213,7 +213,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="~/static/humans/yash.jpg" alt="">
               <h4>Yash Arora</h4>
-              <p class="text-muted">Marketing</p>
+              <p class="text-muted">Web Designer</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="https://www.twitter.com/yasharora0606">
