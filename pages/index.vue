@@ -213,7 +213,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="~/static/humans/yash.jpg" alt="">
               <h4>Yash Arora</h4>
-              <p class="text-muted">Web Designer</p>
+              <p class="text-muted">Marketing Assets Designer</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="https://www.twitter.com/yasharora0606">
@@ -237,7 +237,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="~/static/humans/joey.jpg" alt="">
               <h4>Joey Chik</h4>
-              <p class="text-muted">Logistics</p>
+              <p class="text-muted">Event Coordinator</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
@@ -261,7 +261,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="~/static/humans/nikhil.jpg" alt="">
               <h4>Nikhil James</h4>
-              <p class="text-muted">Finance</p>
+              <p class="text-muted">Financial Consultant</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
@@ -287,7 +287,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="~/static/humans/aaron.jpg" alt="">
               <h4>Aaron Yee</h4>
-              <p class="text-muted">Marketing</p>
+              <p class="text-muted">Social Media Manager</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="https://twitter.com/AaronYee7">
@@ -300,7 +300,7 @@
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/aaron-yee-9466a614a/">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
@@ -311,7 +311,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="~/static/humans/arjun.jpg" alt="">
               <h4>Arjun Pillai</h4>
-              <p class="text-muted">Logistics</p>
+              <p class="text-muted">Corporate Liaison</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="https://twitter.com/ArjunPillai9">
@@ -335,7 +335,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="~/static/humans/jonathan.jpg" alt="">
               <h4>Jonathan Xu</h4>
-              <p class="text-muted">Logistics</p>
+              <p class="text-muted">Sponsor Coordinator</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
