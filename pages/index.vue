@@ -259,7 +259,7 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="cursor-website/img/team/1.jpg" alt="">
+              <img class="mx-auto rounded-circle" src="~/static/humans/nikhil.jpg" alt="">
               <h4>Nikhil James</h4>
               <p class="text-muted">Finance</p>
               <ul class="list-inline social-buttons">
