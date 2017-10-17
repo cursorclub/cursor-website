@@ -29,8 +29,7 @@
       <div class="container">
         <div class="intro-text">
           <div class="intro-heading"><img src="~/static/rasterizedwordmark.png" alt="Cursor" /></div>
-          <div class="intro-lead-in"><em>click</em> into tech</div>
-          <a class="btn btn-xl js-scroll-trigger" href="#events">See what's next</a>
+          <a class="btn btn-xl js-scroll-trigger" href="#events"><em>click</em> into tech</a>
         </div>
       </div>
     </header>
@@ -41,7 +40,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">About</h2>
-            <h3 class="section-subheading text-muted">Why we exist</h3>
+            <h3 class="section-subheading text-muted">Why we're here</h3>
           </div>
         </div>
         <div class="row">
@@ -214,7 +213,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="~/static/humans/yash.jpg" alt="">
               <h4>Yash Arora</h4>
-              <p class="text-muted">Director of Marketing</p>
+              <p class="text-muted">Marketing</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="https://www.twitter.com/yasharora0606">
