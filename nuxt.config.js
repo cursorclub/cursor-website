@@ -54,8 +54,5 @@ module.exports = {
         })
       }
     }
-  },
-  router: {
-    base: '/cursor-website'
   }
 }

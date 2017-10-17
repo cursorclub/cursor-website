@@ -9,6 +9,8 @@ deploy:
   local_dir: dist
   on:
     branch: master
+  repo: cursorclub.github.io
+  target_branch: master
 cache:
   directories:
     - "node_modules"
