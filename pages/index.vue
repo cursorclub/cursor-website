@@ -142,12 +142,12 @@
               <p class="text-muted">Head of Marketing</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://twitter.com/plethorum">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="">
+                  <a href="https://www.facebook.com/samyarv">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
@@ -250,7 +250,7 @@
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/joey-c-1319b7151/">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
@@ -274,7 +274,7 @@
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/nikhil-james-805129150/">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
