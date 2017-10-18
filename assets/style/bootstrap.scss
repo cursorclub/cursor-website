@@ -16,6 +16,23 @@ header.masthead .intro-text .intro-heading img {
   max-width: 500px;
 }
 
-button, .btn {
-  background: linear-gradient(45deg, #3d3356, #ba365d);
+button, .btn, #mainNav .navbar-toggler, ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background: linear-gradient(135deg, #ba365d, #3d3356);
+}
+.btn-xl:active, .btn-xl:hover, .btn-xl:active:hover {
+  background: linear-gradient(85deg, #ba365d, #3d3356);
+  border-color: #3d3356;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #ba365d;
+}
+a {
+  color: #3d3356;
+}
+a.active, a:active, a:focus, a:hover {
+  color: #3d3356;
+}
+::selection {
+  background: #ba365d;
+  color: white;
 }
