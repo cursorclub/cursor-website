@@ -10,6 +10,7 @@ deploy:
   on:
     branch: master
   repo: cursorclub/cursorclub.github.io
+  fqdn: cursor.club
   target_branch: master
 cache:
   directories:
