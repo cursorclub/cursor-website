@@ -142,7 +142,7 @@
               <p class="text-muted">Head of Marketing</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="https://twitter.com/plethorum">
+                  <a href="https://twitter.com/samyarvahid">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
@@ -152,7 +152,7 @@
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/samyarvahid/">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
