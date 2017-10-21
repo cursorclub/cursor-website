@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
   /*
@@ -42,9 +43,48 @@ module.exports = {
       })
     ],
     /*
-    ** Run ESLINT on save
+    ** Add a few loaders
     */
     extend (config, ctx) {
+      // Disable url-loader
+      const rule = config.module.rules.find(r => r.test.toString() === '/\\.(png|jpe?g|gif|svg)$/');
+      config.module.rules.splice(config.module.rules.indexOf(rule), 1);
+
+      // Add it again, but now without 'static/humans' and 'assets/backgrounds'
+      config.module.rules.push({
+        test: /\.(png|jpe?g|gif|svg)$/,
+        loader: 'url-loader',
+        exclude: [path.resolve(__dirname, 'static/humans'), path.resolve(__dirname, 'assets/backgrounds')],
+        query: {
+          limit: 1000, // 1KB
+          name: 'img/[name].[hash:7].[ext]',
+        }
+      });
+
+      // Compress profile photos
+      config.module.rules.push({
+        test: /\.jpg$/i,
+        loader: 'advanced-image-loader',
+        include: [path.resolve(__dirname, 'static/humans')],
+        options: {
+          width: 225,
+          quality: 85,
+          srcset: [225, 450, 900, 'original']
+        }
+      })
+
+      // Compress backgrounds
+      config.module.rules.push({
+        test: /\.jpg$/i,
+        loader: 'advanced-image-loader',
+        include: [path.resolve(__dirname, 'assets/backgrounds')],
+        options: {
+          width: 'original',
+          quality: 85
+        }
+      })
+
+      // Run ESLINT on save
       if (ctx.dev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',

@@ -87,7 +87,7 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="~/static/humans/nicholas.jpg" alt="">
+              <img class="mx-auto rounded-circle" :src="images.nicholas.src" :srcset="images.nicholas.srcset" sizes="225px" alt="Nicholas Carr">
               <h4>Nicholas Carr</h4>
               <p class="text-muted">Co-Founder</p>
               <ul class="list-inline social-buttons">
@@ -111,7 +111,7 @@
           </div>
           <div class="col-sm-6">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="~/static/humans/misha.jpg" alt="">
+              <img class="mx-auto rounded-circle" :src="images.misha.src" :srcset="images.misha.srcset" sizes="225px" alt="Misha Larionov">
               <h4>Misha Larionov</h4>
               <p class="text-muted">Co-Founder</p>
               <ul class="list-inline social-buttons">
@@ -137,7 +137,7 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="~/static/humans/samyar.jpg" alt="">
+              <img class="mx-auto rounded-circle" :src="images.samyar.src" :srcset="images.samyar.srcset" sizes="225px" alt="Samyar Vahid">
               <h4>Samyar Vahid</h4>
               <p class="text-muted">Head of Marketing</p>
               <ul class="list-inline social-buttons">
@@ -161,7 +161,7 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="~/static/humans/feng.jpg" alt="">
+              <img class="mx-auto rounded-circle" :src="images.feng.src" :srcset="images.feng.srcset" sizes="225px" alt="Feng Guo">
               <h4>Feng Guo</h4>
               <p class="text-muted">Head of Logistics</p>
               <ul class="list-inline social-buttons">
@@ -185,7 +185,7 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="~/static/humans/bill.jpg" alt="">
+              <img class="mx-auto rounded-circle" :src="images.bill.src" :srcset="images.bill.srcset" sizes="225px" alt="Bill Liu">
               <h4>Bill Liu</h4>
               <p class="text-muted">Head of Finance</p>
               <ul class="list-inline social-buttons">
@@ -211,7 +211,7 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="~/static/humans/yash.jpg" alt="">
+              <img class="mx-auto rounded-circle" :src="images.yash.src" :srcset="images.yash.srcset" sizes="225px" alt="Yash Arora">
               <h4>Yash Arora</h4>
               <p class="text-muted">Marketing</p>
               <ul class="list-inline social-buttons">
@@ -235,15 +235,10 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="~/static/humans/joey.jpg" alt="">
+              <img class="mx-auto rounded-circle" :src="images.joey.src" :srcset="images.joey.srcset" sizes="225px" alt="Joey Chik">
               <h4>Joey Chik</h4>
               <p class="text-muted">Event Coordinator</p>
               <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
                 <li class="list-inline-item">
                   <a href="https://www.facebook.com/joey.chik.75">
                     <i class="fa fa-facebook"></i>
@@ -259,15 +254,10 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="~/static/humans/nikhil.jpg" alt="">
+              <img class="mx-auto rounded-circle" :src="images.nikhil.src" :srcset="images.nikhil.srcset" sizes="225px" alt="Nikhil James">
               <h4>Nikhil James</h4>
               <p class="text-muted">Finance</p>
               <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
                 <li class="list-inline-item">
                   <a href="https://www.facebook.com/profile.php?id=100011524212064">
                     <i class="fa fa-facebook"></i>
@@ -285,7 +275,7 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="~/static/humans/aaron.jpg" alt="">
+              <img class="mx-auto rounded-circle" :src="images.aaron.src" :srcset="images.aaron.srcset" sizes="225px" alt="Aaron Yee">
               <h4>Aaron Yee</h4>
               <p class="text-muted">Social Media Manager</p>
               <ul class="list-inline social-buttons">
@@ -309,7 +299,7 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="~/static/humans/arjun.jpg" alt="">
+              <img class="mx-auto rounded-circle" :src="images.arjun.src" :srcset="images.arjun.srcset" sizes="225px" alt="Arjun Pillai">
               <h4>Arjun Pillai</h4>
               <p class="text-muted">Logistics</p>
               <ul class="list-inline social-buttons">
@@ -333,15 +323,10 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="~/static/humans/jonathan.jpg" alt="">
+              <img class="mx-auto rounded-circle" :src="images.jonathan.src" :srcset="images.jonathan.srcset" sizes="225px" alt="Jonathan Xu">
               <h4>Jonathan Xu</h4>
               <p class="text-muted">Sponsor Coordinator</p>
               <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
                 <li class="list-inline-item">
                   <a href="https://www.facebook.com/jonathan.xu.50">
                     <i class="fa fa-facebook"></i>
@@ -395,3 +380,24 @@
     </footer>
   </div>
 </template>
+
+<script>
+// Import compressed and resized versions of everyone's images
+import aaron from '~/static/humans/aaron.jpg'
+import arjun from '~/static/humans/arjun.jpg'
+import bill from '~/static/humans/bill.jpg'
+import feng from '~/static/humans/feng.jpg'
+import joey from '~/static/humans/joey.jpg'
+import jonathan from '~/static/humans/jonathan.jpg'
+import misha from '~/static/humans/misha.jpg'
+import nicholas from '~/static/humans/nicholas.jpg'
+import nikhil from '~/static/humans/nikhil.jpg'
+import samyar from '~/static/humans/samyar.jpg'
+import yash from '~/static/humans/yash.jpg'
+
+export default {
+  data: () => ({
+    images: { aaron, arjun, bill, feng, joey, jonathan, misha, nicholas, nikhil, samyar, yash }
+  })
+}
+</script>

@@ -14,6 +14,7 @@
     "@nuxtjs/icon": "^1.1.2",
     "@nuxtjs/manifest": "^1.7.2",
     "@nuxtjs/meta": "^1.5.3",
+    "advanced-image-loader": "^1.0.0",
     "autoprefixer": "^7.1.5",
     "bootstrap": "^4.0.0-beta",
     "jquery": "^3.2.1",
