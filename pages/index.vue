@@ -256,7 +256,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" :src="images.nikhil.src" :srcset="images.nikhil.srcset" sizes="225px" alt="Nikhil James">
               <h4>Nikhil James</h4>
-              <p class="text-muted">Finance</p>
+              <p class="text-muted">Event Planner</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="https://www.facebook.com/profile.php?id=100011524212064">
@@ -301,7 +301,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" :src="images.arjun.src" :srcset="images.arjun.srcset" sizes="225px" alt="Arjun Pillai">
               <h4>Arjun Pillai</h4>
-              <p class="text-muted">Logistics</p>
+              <p class="text-muted">Event Coordinator</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="https://twitter.com/ArjunPillai9">
@@ -327,6 +327,11 @@
               <h4>Jonathan Xu</h4>
               <p class="text-muted">Sponsor Coordinator</p>
               <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/JonathanXu20">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
                 <li class="list-inline-item">
                   <a href="https://www.facebook.com/jonathan.xu.50">
                     <i class="fa fa-facebook"></i>
