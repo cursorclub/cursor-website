@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@nuxtjs/font-awesome": "^1.0.2",
+    "@nuxtjs/google-analytics": "^2.0.1",
     "@nuxtjs/icon": "^1.1.2",
     "@nuxtjs/manifest": "^1.7.2",
     "@nuxtjs/meta": "^1.5.3",
