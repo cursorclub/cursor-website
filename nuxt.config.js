@@ -7,7 +7,7 @@ module.exports = {
   */
   head: {
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Droid+Serif:400,700,400italic,700italic|Roboto+Slab:400,100,300,700' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Droid+Serif:400,700,400italic,700italic|Roboto+Slab:400,100,300,700|Josefin+Sans:500' }
     ]
   },
   manifest: {
@@ -17,7 +17,7 @@ module.exports = {
   'google-analytics': {
     id: 'UA-109689758-1'
   },
-  plugins: [{ src: 'bootstrap', ssr: false },  { src: '~/plugins/theme', ssr: false }],
+  plugins: [{ src: 'bootstrap', ssr: false },  { src: '~/plugins/theme', ssr: false }, '~/plugins/maps'],
   modules: ['@nuxtjs/font-awesome', '@nuxtjs/icon', '@nuxtjs/meta', '@nuxtjs/manifest', '@nuxtjs/google-analytics'],
   css: [
     '~/assets/style/theme.css',

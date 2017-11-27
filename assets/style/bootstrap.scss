@@ -1,19 +1,32 @@
 @import "~bootstrap/scss/bootstrap";
 
+@font-face {
+  font-family: 'Kollektif';
+  src: url("~/assets/Kollektif-Bold.ttf");
+}
 .navbar-brand img {
   height: 40px;
 }
 
 header.masthead {
   background-image: url("~/assets/backgrounds/mountain-silhouette.jpg");
+  font-family: 'Kollektif';
 }
 
+header.masthead h3 {
+  text-transform: none;
+}
 header.masthead .intro-text .intro-heading {
   margin-bottom: 0;
+  font-family: 'Kollektif';
+  text-transform: none;
 }
 
 header.masthead .intro-text .intro-heading img {
   max-width: 500px;
+}
+header.masthead .intro-text .intro-presented img {
+  max-width: 200px;
 }
 
 button, .btn, #mainNav .navbar-toggler, ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
@@ -31,6 +44,9 @@ a {
 }
 a.active, a:active, a:focus, a:hover {
   color: #3d3356;
+}
+h3 {
+  text-transform: none;
 }
 ::selection {
   background: #ba365d;
