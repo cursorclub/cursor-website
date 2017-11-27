@@ -3,7 +3,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="~/static/wordmark.svg" alt="Cursor" /></a>
+        <a class="navbar-brand js-scroll-trigger" href="https://cursor.club"><img src="~/static/wordmark.svg" alt="Cursor" /></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -63,19 +63,6 @@
                   so that developers can request exactly what data they need and
                   nothing more.
                 </p>
-                <h3>What is Cursor?</h3>
-                <p>
-                  Cursor is a youth organisation dedicated to bringing tech
-                  education to youth in the GTA. You can learn more about us at
-                  our <a href="https://cursor.club">main website.</a>
-                </p>
-                <h3>What is Shopify?</h3>
-                <p>
-                  <a href="https://www.shopify.ca">Shopify</a> is a company
-                  dedicated to making commerce better and easier to use.
-                  Their Storefront API is based on GraphQL and lets developers
-                  request data about products or create a checkout.
-                </p>
               </div>
               <div class="col-md-6">
                 <h3>What should I bring?</h3>
@@ -83,10 +70,33 @@
                   Make sure to bring your laptop, phone, chargers, your student
                   ID. Food will be provided.
                 </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <h3>What is Cursor?</h3>
+                <p>
+                  Cursor is a youth organisation dedicated to bringing tech
+                  education to youth in the GTA. You can learn more about us at
+                  our <a href="https://cursor.club">main website.</a>
+                </p>
+              </div>
+              <div class="col-md-6">
                 <h3>How much will it cost?</h3>
                 <p>
                   Absolutely free. Dinner and refreshments will also be
                   available for free throughout the event.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <h3>What is Shopify?</h3>
+                <p>
+                  <a href="https://www.shopify.ca">Shopify</a> is a company
+                  dedicated to making commerce better and easier to use.
+                  Their Storefront API is based on GraphQL and lets developers
+                  request data about products or create a checkout.
                 </p>
               </div>
             </div>
