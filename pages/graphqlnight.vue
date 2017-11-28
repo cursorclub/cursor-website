@@ -29,9 +29,10 @@
 
     <!-- Header -->
     <header class="masthead">
+      <div id="particles-js"></div>
       <div class="container">
         <div class="intro-text">
-          <div class="intro-presented"><img src="~/static/wordmark.svg" alt="Cursor" /></div>
+          <div class="intro-presented"><a href="https://cursor.club"><img src="~/static/wordmark.svg" alt="Cursor" /></a></div>
           <div class="intro-heading">GraphQL Night</div>
           <h3>Learn to build web apps using real data</h3>
           <h3>2018-01-05</h3>
@@ -209,9 +210,24 @@
   </div>
 </template>
 
-<style scoped>
+<style>
 .map {
   height: 300px;
+}
+header.masthead {
+  background: #3d3356;
+  position: relative;
+}
+header.masthead #particles-js {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+header.masthead .container .intro-text {
+  position: relative;
+  z-index: 1;
 }
 </style>
 
@@ -224,6 +240,119 @@ export default {
   }),
   head: {
     title: 'GraphQL Night | Cursor'
+  },
+  mounted () {
+    require('particles.js')
+    window.particlesJS('particles-js', {
+      'particles': {
+        'number': {
+          'value': 80,
+          'density': {
+            'enable': true,
+            'value_area': 800
+          }
+        },
+        'color': {
+          'value': '#ffffff'
+        },
+        'shape': {
+          'type': 'circle',
+          'stroke': {
+            'width': 0,
+            'color': '#000000'
+          },
+          'polygon': {
+            'nb_sides': 5
+          },
+          'image': {
+            'src': 'img/github.svg',
+            'width': 100,
+            'height': 100
+          }
+        },
+        'opacity': {
+          'value': 0.5,
+          'random': false,
+          'anim': {
+            'enable': false,
+            'speed': 1,
+            'opacity_min': 0.1,
+            'sync': false
+          }
+        },
+        'size': {
+          'value': 3,
+          'random': true,
+          'anim': {
+            'enable': false,
+            'speed': 40,
+            'size_min': 0.1,
+            'sync': false
+          }
+        },
+        'line_linked': {
+          'enable': true,
+          'distance': 150,
+          'color': '#ffffff',
+          'opacity': 0.4,
+          'width': 1
+        },
+        'move': {
+          'enable': true,
+          'speed': 6,
+          'direction': 'none',
+          'random': false,
+          'straight': false,
+          'out_mode': 'out',
+          'bounce': false,
+          'attract': {
+            'enable': false,
+            'rotateX': 600,
+            'rotateY': 1200
+          }
+        }
+      },
+      'interactivity': {
+        'detect_on': 'window',
+        'events': {
+          'onhover': {
+            'enable': false,
+            'mode': 'repulse'
+          },
+          'onclick': {
+            'enable': true,
+            'mode': 'push'
+          },
+          'resize': true
+        },
+        'modes': {
+          'grab': {
+            'distance': 400,
+            'line_linked': {
+              'opacity': 1
+            }
+          },
+          'bubble': {
+            'distance': 400,
+            'size': 40,
+            'duration': 2,
+            'opacity': 8,
+            'speed': 3
+          },
+          'repulse': {
+            'distance': 200,
+            'duration': 0.4
+          },
+          'push': {
+            'particles_nb': 4
+          },
+          'remove': {
+            'particles_nb': 2
+          }
+        }
+      },
+      'retina_detect': true
+    })
   }
 }
 </script>
