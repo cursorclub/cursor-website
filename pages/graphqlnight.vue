@@ -17,7 +17,7 @@
               <a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#location">Location</a>
+              <a class="nav-link js-scroll-trigger" href="#location">Venue</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a>
@@ -132,7 +132,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Location</h2>
+            <h2 class="section-heading">Venue</h2>
           </div>
         </div>
         <div class="row text-center">
@@ -147,6 +147,21 @@
 
               <googlemaps-user-position />
             </googlemaps-map>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Accessibility Info</h2>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Coming Soon</h4>
+            <p class="text-muted"></p>
           </div>
         </div>
       </div>
@@ -164,7 +179,7 @@
           <div class="col-md-12">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-users fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Coming Soon</h4>
             <p class="text-muted"></p>
