@@ -32,7 +32,7 @@
       <div id="particles-js"></div>
       <div class="container">
         <div class="intro-text">
-          <div class="intro-presented"><a href="https://cursor.club"><img src="~/static/wordmark.svg" alt="Cursor" /></a></div>
+          <div class="intro-presented mb-5"><a href="https://cursor.club"><img src="~/static/wordmark.svg" alt="Cursor" /></a></div>
           <div class="intro-heading">GraphQL Night</div>
           <h3>Learn to build web apps using real data</h3>
           <h3>2018-01-05</h3>
