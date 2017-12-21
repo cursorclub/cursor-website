@@ -254,27 +254,6 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" :src="images.nikhil.src" :srcset="images.nikhil.srcset" sizes="225px" alt="Nikhil James">
-              <h4>Nikhil James</h4>
-              <p class="text-muted">Event Planner</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/profile.php?id=100011524212064">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/nikhil-james-805129150/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="team-member">
               <img class="mx-auto rounded-circle" :src="images.aaron.src" :srcset="images.aaron.srcset" sizes="225px" alt="Aaron Yee">
               <h4>Aaron Yee</h4>
               <p class="text-muted">Social Media Manager</p>
@@ -297,7 +276,9 @@
               </ul>
             </div>
           </div>
-          <div class="col-sm-4">
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
             <div class="team-member">
               <img class="mx-auto rounded-circle" :src="images.arjun.src" :srcset="images.arjun.srcset" sizes="225px" alt="Arjun Pillai">
               <h4>Arjun Pillai</h4>
@@ -321,7 +302,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <div class="team-member">
               <img class="mx-auto rounded-circle" :src="images.jonathan.src" :srcset="images.jonathan.srcset" sizes="225px" alt="Jonathan Xu">
               <h4>Jonathan Xu</h4>
@@ -396,13 +377,12 @@ import joey from '~/static/humans/joey.jpg'
 import jonathan from '~/static/humans/jonathan.jpg'
 import misha from '~/static/humans/misha.jpg'
 import nicholas from '~/static/humans/nicholas.jpg'
-import nikhil from '~/static/humans/nikhil.jpg'
 import samyar from '~/static/humans/samyar.jpg'
 import yash from '~/static/humans/yash.jpg'
 
 export default {
   data: () => ({
-    images: { aaron, arjun, bill, feng, joey, jonathan, misha, nicholas, nikhil, samyar, yash }
+    images: { aaron, arjun, bill, feng, joey, jonathan, misha, nicholas, samyar, yash }
   })
 }
 </script>
