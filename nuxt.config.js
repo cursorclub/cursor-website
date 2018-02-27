@@ -17,12 +17,12 @@ module.exports = {
   'google-analytics': {
     id: 'UA-109689758-1'
   },
-  plugins: [{ src: 'bootstrap', ssr: false },  { src: '~/plugins/theme', ssr: false }, '~/plugins/maps'],
   modules: ['@nuxtjs/font-awesome', '@nuxtjs/icon', '@nuxtjs/meta', '@nuxtjs/manifest', '@nuxtjs/google-analytics'],
   css: [
     '~/assets/style/theme.css',
     '~/assets/style/bootstrap.scss'
   ],
+  plugins: [{ src: 'bootstrap', ssr: false },  { src: '~/plugins/theme', ssr: false }],
   /*
   ** Customize the progress-bar color
   */
