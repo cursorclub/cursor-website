@@ -6,7 +6,7 @@
         <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="~/static/wordmark.svg" alt="Cursor" /></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
-          <i class="fa fa-bars"></i>
+          <font-awesome-icon icon="bars" />
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
@@ -59,17 +59,17 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Events</h2>
-            <h3 class="section-subheading text-muted">We're working hard on getting our first event off the ground. Stay tuned for more details!</h3>
+            <h3 class="section-subheading text-muted">We're got a lot of stuff planned. Stay tuned for more details!</h3>
           </div>
         </div>
         <div class="row text-center">
           <div class="col-md-12">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Coming Soon</h4>
-            <p class="text-muted"></p>
+            <font-awesome-layers class="fa-8x">
+              <font-awesome-icon icon="circle" class="text-primary" />
+              <font-awesome-icon icon="moon" transform="shrink-6" class="fa-inverse" />
+            </font-awesome-layers>
+            <h4>MoonHacks</h4>
+            <p class="text-muted">Cursor and <a href="http://torontoyouthnetwork.com">TYN</a>'s latest hackathon</p>
           </div>
         </div>
       </div>
@@ -85,242 +85,26 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6">
+          <!-- Dynamically render team members to separate layout from data -->
+          <div :class="{ 'col-sm-6': i < 2 || i > 7, 'col-sm-4': i >= 2 && i <= 7 }" v-for="(member, i) in team" :key="i">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" :src="images.nicholas.src" :srcset="images.nicholas.srcset" sizes="225px" alt="Nicholas Carr">
-              <h4>Nicholas Carr</h4>
-              <p class="text-muted">Co-Founder</p>
+              <img class="mx-auto rounded-circle" :src="member.photo.src" :srcset="member.photo.srcset" sizes="225px" :alt="member.name">
+              <h4 v-text="member.name"></h4>
+              <p class="text-muted" v-text="member.title"></p>
               <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="https://twitter.com/nicholas_carr1">
-                    <i class="fa fa-twitter"></i>
+                <li class="list-inline-item" v-if="member.twitter">
+                  <a :href="member.twitter">
+                    <font-awesome-icon :icon="['fab', 'twitter']" />
                   </a>
                 </li>
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/profile.php?id=100009871454553">
-                    <i class="fa fa-facebook"></i>
+                <li class="list-inline-item" v-if="member.facebook">
+                  <a :href="member.facebook">
+                    <font-awesome-icon :icon="['fab', 'facebook']" />
                   </a>
                 </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/nicholas-carr-729a95143">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" :src="images.misha.src" :srcset="images.misha.srcset" sizes="225px" alt="Misha Larionov">
-              <h4>Misha Larionov</h4>
-              <p class="text-muted">Co-Founder</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="https://twitter.com/Misha_Larionov">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/mishalarionov2">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/misha-larionov-617289b9/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" :src="images.samyar.src" :srcset="images.samyar.srcset" sizes="225px" alt="Samyar Vahid">
-              <h4>Samyar Vahid</h4>
-              <p class="text-muted">Head of Marketing</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="https://twitter.com/samyarvahid">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/samyarv">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/samyarvahid/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" :src="images.feng.src" :srcset="images.feng.srcset" sizes="225px" alt="Feng Guo">
-              <h4>Feng Guo</h4>
-              <p class="text-muted">Head of Logistics</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="https://twitter.com/Feggle_Blast">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/profile.php?id=100009677594415">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/feng-guo-546a84143/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" :src="images.bill.src" :srcset="images.bill.srcset" sizes="225px" alt="Bill Liu">
-              <h4>Bill Liu</h4>
-              <p class="text-muted">Head of Finance</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="https://twitter.com/penguinofwinter">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/penguinofwinter">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/bill-liu-a89a52142/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" :src="images.yash.src" :srcset="images.yash.srcset" sizes="225px" alt="Yash Arora">
-              <h4>Yash Arora</h4>
-              <p class="text-muted">Marketing</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="https://www.twitter.com/yasharora0606">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/yasharora6">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/yasharora0606/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" :src="images.joey.src" :srcset="images.joey.srcset" sizes="225px" alt="Joey Chik">
-              <h4>Joey Chik</h4>
-              <p class="text-muted">Event Coordinator</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/joey.chik.75">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/joey-c-1319b7151/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" :src="images.aaron.src" :srcset="images.aaron.srcset" sizes="225px" alt="Aaron Yee">
-              <h4>Aaron Yee</h4>
-              <p class="text-muted">Social Media Manager</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="https://twitter.com/AaronYee7">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/ayyy.ron">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/aaron-yee-9466a614a/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" :src="images.arjun.src" :srcset="images.arjun.srcset" sizes="225px" alt="Arjun Pillai">
-              <h4>Arjun Pillai</h4>
-              <p class="text-muted">Event Coordinator</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="https://twitter.com/ArjunPillai9">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/arjun.pillai.31">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/arjun-pillai-268860145/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" :src="images.jonathan.src" :srcset="images.jonathan.srcset" sizes="225px" alt="Jonathan Xu">
-              <h4>Jonathan Xu</h4>
-              <p class="text-muted">Sponsor Coordinator</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="https://twitter.com/JonathanXu20">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/jonathan.xu.50">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/jonathanxu01/">
-                    <i class="fa fa-linkedin"></i>
+                <li class="list-inline-item" v-if="member.linkedin">
+                  <a :href="member.linkedin">
+                    <font-awesome-icon :icon="['fab', 'linkedin']" />
                   </a>
                 </li>
               </ul>
@@ -335,28 +119,28 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Cursor 2017</span>
+            <span class="copyright">Copyright &copy; Cursor 2018</span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="https://twitter.com/cursorclub">
-                  <i class="fa fa-twitter"></i>
+                  <font-awesome-icon :icon="['fab', 'twitter']" />
                 </a>
               </li>
               <li class="list-inline-item">
                 <a href="https://facebook.com/cursor.club">
-                  <i class="fa fa-facebook"></i>
+                  <font-awesome-icon :icon="['fab', 'facebook']" />
                 </a>
               </li>
               <li class="list-inline-item">
                 <a href="https://instagram.com/cursor.club">
-                  <i class="fa fa-instagram"></i>
+                  <font-awesome-icon :icon="['fab', 'instagram']" />
                 </a>
               </li>
               <li class="list-inline-item">
                 <a href="https://www.linkedin.com/company/18284485">
-                  <i class="fa fa-linkedin"></i>
+                  <font-awesome-icon :icon="['fab', 'linkedin']" />
                 </a>
               </li>
             </ul>
@@ -380,9 +164,102 @@ import nicholas from '~/static/humans/nicholas.jpg'
 import samyar from '~/static/humans/samyar.jpg'
 import yash from '~/static/humans/yash.jpg'
 
+// Import Font Awesome
+import fontawesome from '@fortawesome/fontawesome'
+import { FontAwesomeIcon, FontAwesomeLayers } from '@fortawesome/vue-fontawesome'
+import { faBars, faCircle, faMoon } from '@fortawesome/fontawesome-free-solid'
+import { faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/fontawesome-free-brands'
+
+// Add them all to the library
+fontawesome.library.add(faBars, faCircle, faMoon, faTwitter, faFacebook, faInstagram, faLinkedin)
+
 export default {
+  components: {
+    FontAwesomeIcon,
+    FontAwesomeLayers
+  },
   data: () => ({
-    images: { aaron, arjun, bill, feng, joey, jonathan, misha, nicholas, samyar, yash }
+    team: [
+      {
+        name: 'Nicholas Carr',
+        photo: nicholas,
+        title: 'Co-Founder',
+        twitter: 'https://twitter.com/nicholas_carr1',
+        facebook: 'https://www.facebook.com/profile.php?id=100009871454553',
+        linkedin: 'https://www.linkedin.com/in/nicholas-carr-729a95143'
+      },
+      {
+        name: 'Misha Larionov',
+        photo: misha,
+        title: 'Co-Founder',
+        twitter: 'https://twitter.com/Misha_Larionov',
+        facebook: 'https://www.facebook.com/mishalarionov2',
+        linkedin: 'https://www.linkedin.com/in/misha-larionov-617289b9/'
+      },
+      {
+        name: 'Samyar Vahid',
+        photo: samyar,
+        title: 'Head of Marketing',
+        twitter: 'https://twitter.com/samyarvahid',
+        facebook: 'https://www.facebook.com/samyarv',
+        linkedin: 'https://www.linkedin.com/in/samyarvahid/'
+      },
+      {
+        name: 'Feng Guo',
+        photo: feng,
+        title: 'Head of Logistics',
+        twitter: 'https://twitter.com/Feggle_Blast',
+        facebook: 'https://www.facebook.com/profile.php?id=100009677594415',
+        linkedin: 'https://www.linkedin.com/in/feng-guo-546a84143/'
+      },
+      {
+        name: 'Bill Liu',
+        photo: bill,
+        title: 'Head of Finance',
+        twitter: 'https://twitter.com/penguinofwinter',
+        facebook: 'https://www.facebook.com/penguinofwinter',
+        linkedin: 'https://www.linkedin.com/in/bill-liu-a89a52142/'
+      },
+      {
+        name: 'Yash Arora',
+        photo: yash,
+        title: 'Marketing',
+        twitter: 'https://www.twitter.com/yasharora0606',
+        facebook: 'https://www.facebook.com/yasharora6',
+        linkedin: 'https://www.linkedin.com/in/yasharora0606/'
+      },
+      {
+        name: 'Joey Chik',
+        photo: joey,
+        title: 'Event Coordinator',
+        facebook: 'https://www.facebook.com/joey.chik.75',
+        linkedin: 'https://www.linkedin.com/in/joey-c-1319b7151/'
+      },
+      {
+        name: 'Aaron Yee',
+        photo: aaron,
+        title: 'Social Media Manager',
+        twitter: 'https://twitter.com/AaronYee7',
+        facebook: 'https://www.facebook.com/ayyy.ron',
+        linkedin: 'https://www.linkedin.com/in/aaron-yee-9466a614a/'
+      },
+      {
+        name: 'Arjun Pillai',
+        photo: arjun,
+        title: 'Event Coordinator',
+        twitter: 'https://twitter.com/ArjunPillai9',
+        facebook: 'https://www.facebook.com/arjun.pillai.31',
+        linkedin: 'https://www.linkedin.com/in/arjun-pillai-268860145/'
+      },
+      {
+        name: 'Jonathan Xu',
+        photo: jonathan,
+        title: 'Sponsor Coordinator',
+        twitter: 'https://twitter.com/JonathanXu20',
+        facebook: 'https://www.facebook.com/jonathan.xu.50',
+        linkedin: 'https://www.linkedin.com/in/jonathanxu01/'
+      }
+    ]
   })
 }
 </script>
