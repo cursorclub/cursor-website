@@ -28,7 +28,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['jquery', 'popper.js', 'bootstrap', 'startbootstrap-agency'],
+    vendor: ['jquery', 'popper.js', 'bootstrap', 'startbootstrap-agency/js/agency'],
     postCSS: [
       require('precss'),
       require('autoprefixer')
