@@ -18,11 +18,8 @@ module.exports = {
     id: 'UA-109689758-1'
   },
   modules: ['@nuxtjs/font-awesome', '@nuxtjs/icon', '@nuxtjs/meta', '@nuxtjs/manifest', '@nuxtjs/google-analytics'],
-  css: [
-    '~/assets/style/theme.css',
-    '~/assets/style/bootstrap.scss'
-  ],
-  plugins: [{ src: 'bootstrap', ssr: false },  { src: '~/plugins/theme', ssr: false }],
+  plugins: [{ src: '~/node_modules/bootstrap', ssr: false }, { src: '~/node_modules/jquery.easing', ssr: false }, { src: '~/node_modules/startbootstrap-agency/js/agency', ssr: false }],
+  css: ['~/assets/style/style.scss'],
   /*
   ** Customize the progress-bar color
   */
@@ -31,7 +28,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['jquery', 'popper.js', 'bootstrap'],
+    vendor: ['jquery', 'popper.js', 'bootstrap', 'startbootstrap-agency'],
     postCSS: [
       require('precss'),
       require('autoprefixer')

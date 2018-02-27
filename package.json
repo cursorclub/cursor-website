@@ -25,6 +25,7 @@
     "popper.js": "^1.12.5",
     "precss": "^2.0.0",
     "sass-loader": "^6.0.6",
+    "startbootstrap-agency": "^4.0.0-beta"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

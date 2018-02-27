@@ -1,0 +1,71 @@
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+// Start bootstrap theme
+@import "~startbootstrap-agency/scss/variables";
+// Override primary colour
+$theme-primary: #ba365d;
+// Mixins
+@import "~startbootstrap-agency/scss/mixins";
+// Global CSS
+@import "~startbootstrap-agency/scss/global";
+// Components
+@import "~startbootstrap-agency/scss/navbar";
+@import "~startbootstrap-agency/scss/masthead";
+@import "~startbootstrap-agency/scss/services";
+@import "~startbootstrap-agency/scss/portfolio";
+@import "~startbootstrap-agency/scss/timeline";
+@import "~startbootstrap-agency/scss/team";
+@import "~startbootstrap-agency/scss/contact";
+@import "~startbootstrap-agency/scss/footer";
+// Bootstrap Overrides
+@import "~startbootstrap-agency/scss/bootstrap-overrides";
+
+@font-face {
+  font-family: 'Kollektif';
+  src: url("~/assets/Kollektif-Bold.ttf");
+}
+.navbar-brand img {
+  height: 40px;
+}
+
+header.masthead {
+  background-image: url("~/assets/backgrounds/mountain-silhouette.jpg");
+  font-family: 'Kollektif';
+}
+
+header.masthead .intro-text .intro-heading {
+  margin-bottom: 0;
+  font-family: 'Kollektif';
+  text-transform: none;
+}
+
+header.masthead .intro-text .intro-heading img {
+  max-width: 500px;
+}
+header.masthead .intro-text .intro-presented img {
+  max-width: 200px;
+}
+
+button, .btn, #mainNav .navbar-toggler {
+  background: linear-gradient(135deg, #ba365d, #3d3356);
+  border: none;
+}
+.btn:not(:disabled):not(.disabled).btn-xl:active, .btn:not(:disabled):not(.disabled).btn.btn-xl:hover, .btn:not(:disabled):not(.disabled).btn.btn-xl:active:hover {
+  background: linear-gradient(85deg, #ba365d, #3d3356);
+}
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #ba365d;
+}
+a {
+  color: #3d3356;
+}
+a.active, a:active, a:focus, a:hover {
+  color: #3d3356;
+}
+h3, h4 {
+  text-transform: none;
+}
+::selection {
+  background: #ba365d;
+  color: white;
+}
