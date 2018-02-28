@@ -7,7 +7,7 @@ module.exports = {
   */
   head: {
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Droid+Serif:400,700,400italic,700italic|Roboto+Slab:400,100,300,700|Josefin+Sans:500' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Roboto+Slab:400,100,300,700|Josefin+Sans:500' }
     ]
   },
   manifest: {

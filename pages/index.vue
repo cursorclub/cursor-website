@@ -59,17 +59,21 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Events</h2>
-            <h3 class="section-subheading text-muted">We're got a lot of stuff planned. Stay tuned for more details!</h3>
+            <h3 class="section-subheading text-muted">We've got a lot of stuff planned. Stay tuned for more details!</h3>
           </div>
         </div>
         <div class="row text-center">
-          <div class="col-md-12">
-            <font-awesome-layers class="fa-8x">
-              <font-awesome-icon icon="circle" class="text-primary" />
-              <font-awesome-icon icon="moon" transform="shrink-6" class="fa-inverse" />
-            </font-awesome-layers>
-            <h4>MoonHacks</h4>
-            <p class="text-muted">Cursor and <a href="http://torontoyouthnetwork.com">TYN</a>'s latest hackathon</p>
+          <div class="col-md-4 mx-auto">
+            <div class="card">
+              <font-awesome-layers class="fa-8x mx-auto mt-3">
+                <font-awesome-icon icon="circle" class="text-primary" />
+                <font-awesome-icon icon="moon" transform="shrink-6" class="fa-inverse" />
+              </font-awesome-layers>
+              <div class="card-body">
+                <h4 class="card-title">MoonHacks</h4>
+                <p class="card-text">Cursor and <a href="http://torontoyouthnetwork.com">TYN</a>'s latest hackathon</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
