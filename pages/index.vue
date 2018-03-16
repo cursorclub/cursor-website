@@ -70,7 +70,7 @@
                 <font-awesome-icon icon="moon" transform="shrink-6" class="fa-inverse" />
               </font-awesome-layers>
               <div class="card-body">
-                <h4 class="card-title">MoonHacks</h4>
+                <h4 class="card-title">Lunar Hacks</h4>
                 <p class="card-text">Cursor and <a href="http://torontoyouthnetwork.com">TYN</a>'s latest hackathon</p>
               </div>
             </div>
