@@ -54,7 +54,7 @@ module.exports = {
       config.module.rules.push({
         test: /\.(png|jpe?g|gif|svg)$/,
         loader: 'url-loader',
-        exclude: [path.resolve(__dirname, 'static/humans'), path.resolve(__dirname, 'assets/backgrounds')],
+        exclude: [path.resolve(__dirname, 'static/humans'), path.resolve(__dirname, 'assets/backgrounds'), path.resolve(__dirname, 'assets/eventcards')],
         query: {
           limit: 1000, // 1KB
           name: 'img/[name].[hash:7].[ext]',
@@ -81,6 +81,18 @@ module.exports = {
         options: {
           width: 'original',
           quality: 85
+        }
+      })
+
+      // Compress LunarHacks banner
+      config.module.rules.push({
+        test: /\.png$/i,
+        loader: 'advanced-image-loader',
+        include: [path.resolve(__dirname, 'assets/eventcards')],
+        options: {
+          width: 225,
+          quality: 85,
+          srcset: [210, 290, 350, 510, 580, 'original']
         }
       })
 

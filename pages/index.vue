@@ -63,16 +63,15 @@
           </div>
         </div>
         <div class="row text-center">
-          <div class="col-md-4 mx-auto">
-            <div class="card">
-              <font-awesome-layers class="fa-8x mx-auto mt-3">
-                <font-awesome-icon icon="circle" class="text-primary" />
-                <font-awesome-icon icon="moon" transform="shrink-6" class="fa-inverse" />
-              </font-awesome-layers>
-              <div class="card-body">
-                <h4 class="card-title">Lunar Hacks</h4>
-                <p class="card-text">Cursor and <a href="http://torontoyouthnetwork.com">TYN</a>'s latest hackathon</p>
-              </div>
+          <div class="col-md-4 mx-auto portfolio-item bg-light">
+            <a class="portfolio-link" href="https://lunarhacks.ca">
+              <img class="img-fluid" :src="lhbanner.src" :srcset="lhbanner.srcset" alt="LUNAR HACKS" />
+            </a>
+            <div class="portfolio-caption">
+              <p>Cursor and <a href="http://torontoyouthnetwork.com">TYN</a>'s latest hackathon</p>
+              <p>August 31 - September 1</p>
+              <p>University of Toronto</p>
+              <p><a href="https://lunarhacks.ca">https://lunarhacks.ca</a></p>
             </div>
           </div>
         </div>
@@ -156,6 +155,8 @@
 </template>
 
 <script>
+// Import LunarHacks banner
+import lhbanner from '~/assets/eventcards/lhbanner.png'
 // Import compressed and resized versions of everyone's images
 import aaron from '~/static/humans/aaron.jpg'
 import arjun from '~/static/humans/arjun.jpg'
@@ -263,7 +264,8 @@ export default {
         facebook: 'https://www.facebook.com/jonathan.xu.50',
         linkedin: 'https://www.linkedin.com/in/jonathanxu01/'
       }
-    ]
+    ],
+    lhbanner
   })
 }
 </script>
