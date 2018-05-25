@@ -29,7 +29,19 @@
       <div class="container">
         <div class="intro-text">
           <div class="intro-heading"><img src="~/static/wordmark.svg" alt="Cursor" /></div>
-          <a class="btn btn-xl js-scroll-trigger" href="#events"><em>click</em> into tech</a>
+          <h2><em>click</em> into tech</h2>
+          <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup">
+            <form action="https://club.us12.list-manage.com/subscribe/post?u=4f16b0cc0a9f53e1ebb83769a&amp;id=cb64e39e3b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4f16b0cc0a9f53e1ebb83769a_cb64e39e3b" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="subscribe to updates" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+              </div>
+            </form>
+          </div>
+          <!--End mc_embed_signup-->
         </div>
       </div>
     </header>
@@ -62,13 +74,26 @@
             <h3 class="section-subheading text-muted">We've got a lot of stuff planned. Stay tuned for more details!</h3>
           </div>
         </div>
-        <div class="row text-center">
-          <div class="col-md-4 mx-auto portfolio-item bg-light">
-            <a class="portfolio-link" href="https://lunarhacks.ca">
-              <img class="img-fluid" :src="lhbanner.src" :srcset="lhbanner.srcset" alt="LUNAR HACKS" />
+        <div class="row">
+          <div class="col-md-6 portfolio-item bg-light">
+            <a class="portfolio-link" href="http://www.rhpl.richmondhill.on.ca/Programs/ProgramDetail.cfm?programID=2210">
+              <img class="img-fluid" :src="rnbanner.src" :srcset="rnbanner.srcset" alt="" />
+              <h3 class="text-center">Code an App with Cursor</h3>
             </a>
             <div class="portfolio-caption">
-              <p>Cursor and <a href="http://torontoyouthnetwork.com">TYN</a>'s latest hackathon</p>
+              <p>Teens (12-16 years) learn to code apps for their phones using React Native, a technology developed by Facebook. All they need is a laptop, their phones and some creativity.</p>
+              <p>July 5, 6-9 PM</p>
+              <p><a href="http://www.rhpl.richmondhill.on.ca/libraries/centrallibrary.cfm">Richmond Hill Central Library</a></p>
+              <p><a href="http://www.rhpl.richmondhill.on.ca/Programs/ProgramDetail.cfm?programID=2210">http://www.rhpl.richmondhill.on.ca/Programs/ProgramDetail.cfm?programID=2210</a></p>
+            </div>
+          </div>
+          <div class="col-md-6 portfolio-item bg-light">
+            <a class="portfolio-link" href="https://lunarhacks.ca">
+              <img class="img-fluid" :src="lhbanner.src" :srcset="lhbanner.srcset" alt="" />
+              <h3 class="text-center">LunarHacks</h3>
+            </a>
+            <div class="portfolio-caption">
+              <p>LunarHacks is a 24 hour hackathon hosted by Cursor and <a href="http://torontoyouthnetwork.com">Toronto Youth Network</a>, where participants are able to build “hacks” to real-life problems using software and hardware. LunarHacks focuses on providing the necessary resources for participants to experiment and create a meaningful project to impact the world.</p>
               <p>August 31 - September 1</p>
               <p>University of Toronto</p>
               <p><a href="https://lunarhacks.ca">https://lunarhacks.ca</a></p>
@@ -157,6 +182,7 @@
 <script>
 // Import LunarHacks banner
 import lhbanner from '~/assets/eventcards/lhbanner.png'
+import rnbanner from '~/assets/eventcards/rnbanner.jpg'
 // Import compressed and resized versions of everyone's images
 import aaron from '~/static/humans/aaron.jpg'
 import arjun from '~/static/humans/arjun.jpg'
@@ -265,7 +291,8 @@ export default {
         linkedin: 'https://www.linkedin.com/in/jonathanxu01/'
       }
     ],
-    lhbanner
+    lhbanner,
+    rnbanner
   })
 }
 </script>

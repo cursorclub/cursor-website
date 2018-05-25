@@ -1,5 +1,5 @@
-const webpack = require('webpack');
-const path = require('path');
+const webpack = require('webpack')
+const path = require('path')
 
 module.exports = {
   /*
@@ -7,7 +7,8 @@ module.exports = {
   */
   head: {
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic|Roboto+Slab:400,700|Josefin+Sans:400,700' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic|Roboto+Slab:400,700|Josefin+Sans:400,700' },
+      { rel: 'stylesheet', href: 'https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css' }
     ]
   },
   manifest: {
@@ -47,8 +48,8 @@ module.exports = {
     */
     extend (config, ctx) {
       // Disable url-loader
-      const rule = config.module.rules.find(r => r.test.toString() === '/\\.(png|jpe?g|gif|svg)$/');
-      config.module.rules.splice(config.module.rules.indexOf(rule), 1);
+      const rule = config.module.rules.find(r => r.test.toString() === '/\\.(png|jpe?g|gif|svg)$/')
+      config.module.rules.splice(config.module.rules.indexOf(rule), 1)
 
       // Add it again, but now without 'static/humans' and 'assets/backgrounds'
       config.module.rules.push({
@@ -57,9 +58,9 @@ module.exports = {
         exclude: [path.resolve(__dirname, 'static/humans'), path.resolve(__dirname, 'assets/backgrounds'), path.resolve(__dirname, 'assets/eventcards')],
         query: {
           limit: 1000, // 1KB
-          name: 'img/[name].[hash:7].[ext]',
+          name: 'img/[name].[hash:7].[ext]'
         }
-      });
+      })
 
       // Compress profile photos
       config.module.rules.push({
@@ -86,7 +87,7 @@ module.exports = {
 
       // Compress LunarHacks banner
       config.module.rules.push({
-        test: /\.png$/i,
+        test: /\.(png|jpe?g|gif|svg)$/,
         loader: 'advanced-image-loader',
         include: [path.resolve(__dirname, 'assets/eventcards')],
         options: {

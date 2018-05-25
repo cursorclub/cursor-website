@@ -44,6 +44,10 @@ header.masthead {
   font-family: 'Kollektif';
 }
 
+header.masthead h2 {
+  font-family: 'Josefin Sans';
+}
+
 header.masthead .intro-text .intro-heading {
   margin-bottom: 0;
   font-family: 'Kollektif';
@@ -74,4 +78,14 @@ h3, h4 {
 .portfolio-caption p {
   font-family: 'Kollektif';
   margin-bottom: 0;
+}
+.portfolio-link img {
+  margin-bottom: 10px;
+}
+
+#mc_embed_signup .button {
+  background: linear-gradient(135deg, #ba365d, #3d3356);
+}
+#mc_embed_signup input.email {
+  font-family: 'Kollektif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
