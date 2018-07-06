@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="row text-center">
-          <div class="col-md-6 mx-auto">
+          <div class="col-md-3 mx-auto">
             <a href="https://docs.google.com/presentation/d/1EG2o4_A-VhmDY9TQCvIMX4tTABXEiSM9AyFg3F0cfug/edit?usp=sharing" target="_blank">
               <font-awesome-layers class="fa-8x">
                 <font-awesome-icon icon="circle"></font-awesome-icon>
@@ -34,13 +34,31 @@
               <h4>Slides</h4>
             </a>
           </div>
-          <div class="col-md-6 mx-auto">
+          <div class="col-md-3 mx-auto">
             <a href="https://github.com/cursorclub/react-native-todo" target="_blank">
               <font-awesome-layers class="fa-8x">
                 <font-awesome-icon icon="circle"></font-awesome-icon>
                 <font-awesome-icon :icon="['fab', 'github']" transform="shrink-3" class="fa-inverse"></font-awesome-icon>
               </font-awesome-layers>
               <h4>Finished Todo List Example</h4>
+            </a>
+          </div>
+          <div class="col-md-3 mx-auto">
+            <a href="http://www.rhpl.richmondhill.on.ca/Programs/ProgramDetail.cfm?programID=2210" target="_blank">
+              <font-awesome-layers class="fa-8x">
+                <font-awesome-icon icon="circle"></font-awesome-icon>
+                <font-awesome-icon icon="calendar" transform="shrink-7" class="fa-inverse"></font-awesome-icon>
+              </font-awesome-layers>
+              <h4>Library Event Page</h4>
+            </a>
+          </div>
+          <div class="col-md-3 mx-auto">
+            <a href="https://www.eventbrite.ca/e/code-an-app-with-cursor-tickets-44928685909?aff=es2" target="_blank">
+              <font-awesome-layers class="fa-8x">
+                <font-awesome-icon icon="circle"></font-awesome-icon>
+                <font-awesome-icon icon="ticket-alt" transform="shrink-7 left-1" class="fa-inverse"></font-awesome-icon>
+              </font-awesome-layers>
+              <h4>Eventbrite</h4>
             </a>
           </div>
         </div>
@@ -148,12 +166,12 @@
 // Import Font Awesome
 import fontawesome from '@fortawesome/fontawesome'
 import { FontAwesomeIcon, FontAwesomeLayers } from '@fortawesome/vue-fontawesome'
-import { faDesktop } from '@fortawesome/fontawesome-free-solid'
+import { faDesktop, faTicketAlt, faCalendar } from '@fortawesome/fontawesome-free-solid'
 import { faGithub } from '@fortawesome/fontawesome-free-brands'
 import CursorFooter from '~/components/CursorFooter'
 
 // Add them all to the library
-fontawesome.library.add(faGithub, faDesktop)
+fontawesome.library.add(faGithub, faDesktop, faTicketAlt, faCalendar)
 
 export default {
   components: {

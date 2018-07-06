@@ -76,15 +76,15 @@
         </div>
         <div class="row">
           <div class="col-md-6 portfolio-item bg-light">
-            <a class="portfolio-link" href="http://www.rhpl.richmondhill.on.ca/Programs/ProgramDetail.cfm?programID=2210">
+            <nuxt-link class="portfolio-link" to="/reactnative">
               <img class="img-fluid" :src="rnbanner.src" :srcset="rnbanner.srcset" alt="" />
               <h3 class="text-center">Code an App with Cursor</h3>
-            </a>
+            </nuxt-link>
             <div class="portfolio-caption">
               <p>Teens (12-16 years) learn to code apps for their phones using React Native, a technology developed by Facebook. All they need is a laptop, their phones and some creativity.</p>
               <p>July 5, 6-9 PM</p>
               <p><a href="http://www.rhpl.richmondhill.on.ca/libraries/centrallibrary.cfm">Richmond Hill Central Library</a></p>
-              <p><a href="http://www.rhpl.richmondhill.on.ca/Programs/ProgramDetail.cfm?programID=2210">http://www.rhpl.richmondhill.on.ca/Programs/ProgramDetail.cfm?programID=2210</a></p>
+              <p><nuxt-link to="/reactnative">https://cursor.club/reactnative</nuxt-link></p>
             </div>
           </div>
           <div class="col-md-6 portfolio-item bg-light">
@@ -93,9 +93,8 @@
               <h3 class="text-center">LunarHacks</h3>
             </a>
             <div class="portfolio-caption">
-              <p>LunarHacks is a 24 hour hackathon hosted by Cursor and <a href="http://torontoyouthnetwork.com">Toronto Youth Network</a>, where participants are able to build “hacks” to real-life problems using software and hardware. LunarHacks focuses on providing the necessary resources for participants to experiment and create a meaningful project to impact the world.</p>
-              <p>August 31 - September 1</p>
-              <p>University of Toronto</p>
+              <p>Cursor's first 24 hour hackathon</p>
+              <p>Date TBA</p>
               <p><a href="https://lunarhacks.ca">https://lunarhacks.ca</a></p>
             </div>
           </div>
