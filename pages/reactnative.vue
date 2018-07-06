@@ -120,6 +120,25 @@
       </div>
     </section>
 
+    <!-- Further Reading -->
+    <section id="about" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Further Learning</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p><a href="https://facebook.github.io/react-native/docs/getting-started">React Native getting started guide</a></p>
+            <p><a href="https://docs.expo.io/versions/v28.0.0/guides/">Expo guides</a></p>
+            <p><a href="https://react-native-training.github.io/react-native-elements/docs/overview.html">React Native Elements documentation</a></p>
+            <p>If you need help working through the workshop, we're here to help. You can always send us an email at <a href="mailto:hello@cursor.club">hello@cursor.club</a> or message us about anything on <a href="https://m.me/cursor.club">Facebook</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
     <cursor-footer></cursor-footer>
   </div>
