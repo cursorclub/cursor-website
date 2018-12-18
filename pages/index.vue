@@ -113,7 +113,7 @@
         </div>
         <div class="row">
           <!-- Dynamically render team members to separate layout from data -->
-          <div :class="{ 'col-sm-6': i < 2 || i > 7, 'col-sm-4': i >= 2 && i <= 7 }" v-for="(member, i) in team" :key="i">
+          <div :class="{ 'col-sm-6': i < 2, 'col-sm-4': i >= 2 }" v-for="(member, i) in team" :key="i">
             <div class="team-member">
               <img class="mx-auto rounded-circle" :src="member.photo.src" :srcset="member.photo.srcset" sizes="225px" :alt="member.name">
               <h4 v-text="member.name"></h4>
@@ -157,6 +157,7 @@ import bill from '~/static/humans/bill.jpg'
 import feng from '~/static/humans/feng.jpg'
 import joey from '~/static/humans/joey.jpg'
 import jonathan from '~/static/humans/jonathan.jpg'
+import katelyn from '~/static/humans/katelyn.jpg'
 import misha from '~/static/humans/misha.jpg'
 import nicholas from '~/static/humans/nicholas.jpg'
 import samyar from '~/static/humans/samyar.jpg'
@@ -260,6 +261,12 @@ export default {
         twitter: 'https://twitter.com/JonathanXu20',
         facebook: 'https://www.facebook.com/jonathan.xu.50',
         linkedin: 'https://www.linkedin.com/in/jonathanxu01/'
+      },
+      {
+        name: 'Katelyn Wang',
+        photo: katelyn,
+        title: 'Venue Coordinator',
+        linkedin: 'https://www.linkedin.com/in/katelyn-wang17/'
       }
     ],
     lhbanner,
