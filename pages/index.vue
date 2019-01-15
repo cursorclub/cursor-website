@@ -19,6 +19,9 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Team</a>
             </li>
+            <li class="nav-item">
+              <nuxt-link class="nav-link js-scroll-trigger" to="/coc">Code of Conduct</nuxt-link>
+            </li>
           </ul>
         </div>
       </div>
@@ -93,7 +96,7 @@
               <h3 class="text-center">LunarHacks</h3>
             </a>
             <div class="portfolio-caption">
-              <p>Cursor's first 24 hour hackathon</p>
+              <p>Cursor's first 12 hour hack day</p>
               <p>Date TBA</p>
               <p><a href="https://lunarhacks.ca">https://lunarhacks.ca</a></p>
             </div>
