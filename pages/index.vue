@@ -85,7 +85,7 @@
             </nuxt-link>
             <div class="portfolio-caption">
               <p>Teens (12-16 years) learn to code apps for their phones using React Native, a technology developed by Facebook. All they need is a laptop, their phones and some creativity.</p>
-              <p>July 5, 6-9 PM</p>
+              <p>July 5, 2018, 6-9 PM</p>
               <p><a href="http://www.rhpl.richmondhill.on.ca/libraries/centrallibrary.cfm">Richmond Hill Central Library</a></p>
               <p><nuxt-link to="/reactnative">https://cursor.club/reactnative</nuxt-link></p>
             </div>
@@ -97,7 +97,7 @@
             </a>
             <div class="portfolio-caption">
               <p>Cursor's first 12 hour hack day</p>
-              <p>Date TBA</p>
+              <p>February 2, 2019, 9 AM-9 PM</p>
               <p><a href="https://lunarhacks.ca">https://lunarhacks.ca</a></p>
             </div>
           </div>
