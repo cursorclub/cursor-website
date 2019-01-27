@@ -60,14 +60,23 @@ header.masthead .intro-text .intro-heading img {
 header.masthead .intro-text .intro-presented img {
   max-width: 200px;
 }
+header.masthead.banner {
+  background: #1a1c26;
+}
+header.masthead.banner .intro-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 button, .btn, #mainNav .navbar-toggler {
   background: linear-gradient(135deg, #ba365d, #3d3356);
   font-family: 'Josefin Sans';
   border: none;
+  color: white;
 }
-.btn:not(:disabled):not(.disabled).btn-xl:active, .btn:not(:disabled):not(.disabled).btn.btn-xl:hover, .btn:not(:disabled):not(.disabled).btn.btn-xl:active:hover {
+.btn:not(:disabled):not(.disabled).btn-xl:active, .btn:not(:disabled):not(.disabled).btn.btn-xl:hover, .btn:not(:disabled):not(.disabled).btn.btn-xl:active:hover, .btn:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).btn:hover, .btn:not(:disabled):not(.disabled).btn:active:hover {
   background: linear-gradient(85deg, #ba365d, #3d3356);
+  color: white;
 }
 h3, h4 {
   text-transform: none;

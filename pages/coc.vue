@@ -3,7 +3,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <nuxt-link class="navbar-brand js-scroll-trigger" to="/"><img src="~/static/wordmark.svg" alt="Cursor" /></nuxt-link>
+        <nuxt-link class="navbar-brand" to="/"><img src="~/static/wordmark.svg" alt="Cursor" /></nuxt-link>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <font-awesome-icon icon="bars" />
@@ -11,16 +11,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <nuxt-link class="nav-link js-scroll-trigger" to="/#about">About</nuxt-link>
+              <nuxt-link class="nav-link" to="/#about">About</nuxt-link>
             </li>
             <li class="nav-item">
-              <nuxt-link class="nav-link js-scroll-trigger" to="/#events">Events</nuxt-link>
+              <nuxt-link class="nav-link" to="/#events">Events</nuxt-link>
             </li>
             <li class="nav-item">
-              <nuxt-link class="nav-link js-scroll-trigger" to="/#team">Team</nuxt-link>
+              <nuxt-link class="nav-link" to="/#team">Team</nuxt-link>
             </li>
             <li class="nav-item">
-              <nuxt-link class="nav-link js-scroll-trigger" to="/coc">Code of Conduct</nuxt-link>
+              <nuxt-link class="nav-link active" to="/coc">Code of Conduct</nuxt-link>
             </li>
           </ul>
         </div>
