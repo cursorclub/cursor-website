@@ -48,7 +48,7 @@
         </div>
       </div>
     </header>
-    <header class="masthead banner">
+    <!-- <header class="masthead banner">
       <div class="container">
         <div class="intro-text" style="padding-bottom: 40px;">
           <div class="intro-heading"><img src="~/static/lunarhacks.png" alt="LunarHacks" style="margin-top: -70px; margin-right: 100px; margin-bottom: -100px" /></div>
@@ -56,7 +56,7 @@
           <a class="btn" target="_blank" href="https://lunarhacks.eventbrite.ca">Register now!</a>
         </div>
       </div>
-    </header>
+    </header> -->
 
     <!-- About -->
     <section id="about" class="bg-light">
@@ -105,7 +105,7 @@
               <h3 class="text-center">LunarHacks</h3>
             </a>
             <div class="portfolio-caption">
-              <p>Cursor's first 12 hour hack day</p>
+              <p>Cursor's first 12 hour hack day! Students from around Toronto bring their ideas to life over 12 hours of hacking and fun! </p>
               <p>February 2, 2019, 9 AM-8:30 PM</p>
               <p><a href="https://goo.gl/maps/D8HNoGANiB92">Mozilla Toronto</a></p>
               <p><a href="https://lunarhacks.ca">https://lunarhacks.ca</a></p>
