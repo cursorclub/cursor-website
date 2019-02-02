@@ -2,8 +2,8 @@
 </template>
 <script>
 export default {
-fetch({redirect}) {
-redirect('/intro-to-web/Web Development.pptx')
-}
+  mounted () {
+    location.replace('/intro-to-web/Web Development.pptx')
+  }
 }
 </script>
