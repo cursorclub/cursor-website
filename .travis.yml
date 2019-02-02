@@ -12,6 +12,3 @@ deploy:
   repo: cursorclub/cursorclub.github.io
   fqdn: cursor.club
   target_branch: master
-cache:
-  directories:
-    - "node_modules"
