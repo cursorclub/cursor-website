@@ -111,6 +111,18 @@
               <p><a href="https://lunarhacks.ca">https://lunarhacks.ca</a></p>
             </div>
           </div>
+          <div class="col-md-6 portfolio-item bg-light">
+            <a class="portfolio-link" href="https://www.eventbrite.ca/e/learn-git-version-control-with-cursor-tickets-57449631394">
+              <img class="img-fluid" :src="gitbanner.src" :srcset="gitbanner.srcset" alt="" />
+              <h3 class="text-center">Learn Git Version Control with Cursor</h3>
+            </a>
+            <div class="portfolio-caption">
+              <p>Join us for an introductory workshop on Git and GitHub. We'll show you how to use these increasingly popular tools to teamwork your code and back up your previous versions. Please bring your own laptop if possible. </p>
+              <p>March 14, 2019, 6 PM-9 PM</p>
+              <p><a href="http://www.rhpl.richmondhill.on.ca/libraries/centrallibrary.cfm">Richmond Hill Central Library</a></p>
+              <p><a href="https://www.eventbrite.ca/e/learn-git-version-control-with-cursor-tickets-57449631394">https://www.eventbrite.ca/e/learn-git-version-control-with-cursor-tickets-57449631394</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -163,6 +175,7 @@
 // Import LunarHacks banner
 import lhbanner from '~/assets/eventcards/lhbanner.png'
 import rnbanner from '~/assets/eventcards/rnbanner.jpg'
+import gitbanner from '~/assets/eventcards/gitbanner.jpg'
 // Import compressed and resized versions of everyone's images
 import aaron from '~/static/humans/aaron.jpg'
 import arjun from '~/static/humans/arjun.jpg'
@@ -283,7 +296,8 @@ export default {
       }
     ],
     lhbanner,
-    rnbanner
+    rnbanner,
+    gitbanner
   })
 }
 </script>
