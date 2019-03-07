@@ -80,7 +80,7 @@ module.exports = {
         loader: 'advanced-image-loader',
         include: [path.resolve(__dirname, 'assets/backgrounds')],
         options: {
-          width: 'original',
+          width: '1024',
           quality: 85
         }
       })

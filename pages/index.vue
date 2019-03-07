@@ -48,15 +48,15 @@
         </div>
       </div>
     </header>
-    <!-- <header class="masthead banner">
+    <header class="masthead banner" :style="{ background: `linear-gradient(#232323dd, #232323dd), no-repeat center/cover url(${altgitbanner.src})` }">
       <div class="container">
         <div class="intro-text" style="padding-bottom: 40px;">
-          <div class="intro-heading"><img src="~/static/lunarhacks.png" alt="LunarHacks" style="margin-top: -70px; margin-right: 100px; margin-bottom: -100px" /></div>
-          <h3>February 2 @ Mozilla Toronto</h3>
-          <a class="btn" target="_blank" href="https://lunarhacks.eventbrite.ca">Register now!</a>
+          <div class="intro-heading" style="font-weight: 400; letter-spacing: -0.05em">intro to Git</div>
+          <h3>March 14 @ Richmond Hill Central Library</h3>
+          <a class="btn" target="_blank" href="https://www.eventbrite.ca/e/learn-git-version-control-with-cursor-tickets-57449631394">Register now!</a>
         </div>
       </div>
-    </header> -->
+    </header>
 
     <!-- About -->
     <section id="about" class="bg-light">
@@ -176,6 +176,7 @@
 import lhbanner from '~/assets/eventcards/lhbanner.png'
 import rnbanner from '~/assets/eventcards/rnbanner.jpg'
 import gitbanner from '~/assets/eventcards/gitbanner.jpg'
+import altgitbanner from '~/assets/backgrounds/altgitbanner.jpg'
 // Import compressed and resized versions of everyone's images
 import aaron from '~/static/humans/aaron.jpg'
 import arjun from '~/static/humans/arjun.jpg'
@@ -297,7 +298,8 @@ export default {
     ],
     lhbanner,
     rnbanner,
-    gitbanner
+    gitbanner,
+    altgitbanner
   })
 }
 </script>
